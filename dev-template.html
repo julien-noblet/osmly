@@ -46,16 +46,45 @@
         */
 
             var config = {
-                title: 'title',
+                title: 'iBuild',
                 instructions: 'random',
-                db: 'http://localhost:8000/?db=LA',
-                usePropertyAsTag: ['NAME'],
+                db: 'http://localhost:8000/?db=new',
+                usePropertyAsTag: [
+                  'building',
+                  'wall',
+                  'add:housenumber',
+                  'addr:country',
+                  'addr:city',
+                  'addr:housename',
+                  'addr:postcode',
+                  'addr:street',
+                  'aeroway',
+                  'amenity',
+                  'atm',
+                  'brand',
+                  'building:levels',
+                  'denomination',
+                  'description',
+                  'description:fr',
+                  'layer',
+                  'leisure',
+                  'name',
+                  'note',
+                  'office',
+                  'opening_hours',
+                  'operator',
+                  'operator:type',
+                  'ref:UAI',
+                  'religion',
+                  'school:FR',
+                  'shop'
+                ],
                 context: {
-                    'leisure': ['park', 'playground'],
-                    'amenity': ['school']
+                    'building' : ['yes','church', 'commercial', 'hangar', 'house', 'residential']
                 },
                 problems: [
-                    'idk',
+                    'Already done',
+                    'False positive',
                     'nothing'
                 ],
             };

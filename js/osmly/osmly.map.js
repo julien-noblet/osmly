@@ -2,9 +2,14 @@
 osmly.map = function() {
     var map = L.map('map', {
         center: osmly.settings.origin,
-        layers: [new L.BingLayer('Arzdiw4nlOJzRwOz__qailc8NiR31Tt51dN2D7cm57NrnceZnCpgOkmJhNpGoppU')],
+        layers: [L.tileLayer(
+  "http://tms.cadastre.openstreetmap.fr/*/tout/{z}/{x}/{y}.png", {
+    maxZoom: 22,
+    minZoom: 16,
+    attribution: "&copy; Cadastre"
+  })],
         zoom: osmly.settings.zoom,
-        maxZoom: 19,
+        maxZoom: 22,
         fadeAnimation: false
     });
 

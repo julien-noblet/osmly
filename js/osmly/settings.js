@@ -1,23 +1,22 @@
 var settings = {
     // refer to settings_documentation.md for details
-    title: '',
+    title: 'iBuild',
     db: '',
-    writeApi: 'http://api06.dev.openstreetmap.org',
+    writeApi: 'http://api.openstreetmap.org',
     oauth_secret: 'Mon0UoBHaO3qvfgwWrMkf4QAPM0O4lITd3JRK4ff',
     consumerKey: 'yx996mtweTxLsaxWNc96R7vpfZHKQdoI9hzJRFwg',
     readApi: 'http://www.overpass-api.de/api/xapi?map?',
     context: {},
-    origin: [0,0],
-    zoom: 2,
+    origin: [46.6654,-1.3497],
+    zoom: 13,
     demo: true,
     changesetTags: {
         'created_by': 'OSMLY',
-        'osmly:version': '1.1.0',
-        'imagery_used': 'Bing'
+        'osmly:version': '1.1.0'
     },
     renameProperty: {},
     usePropertyAsTag: [],
-    appendTag: {},
+    appendTag: {'source': 'cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2015'},
     featureStyle: {
         color: '#00FF00',
         weight: 3,
